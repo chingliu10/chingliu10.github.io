@@ -36,7 +36,84 @@
     color: white;
 }
 
+
+
+
 /*end of small navigation*/
+/*footer below*/
+
+.topFooter {
+    background-color: #001E3D;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    padding: 50px 2%;
+    color: whitesmoke;
+    margin: 0;
+}
+
+.biography {
+    padding-right: 30px;
+}
+
+.biography p {
+    margin-top: 20px;
+    font-size: .8rem;
+}
+
+.quick_links h3, .follow_us h3 , .contacts h3 {
+    color: whitesmoke;
+    margin-bottom: 20px;
+} 
+
+.quick_links ul , .follow_us ul , .contacts ul li{
+    list-style-type: none;
+}
+
+.quick_links ul li , .follow_us ul li , .contacts ul li{
+    margin-bottom: 20px;
+}
+
+.quick_links ul li a , .follow_us ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 0.8rem;
+}
+
+.follow_us ul li a i {
+    font-size: 0.8rem;
+    color: #BC771D;
+    margin-right: 5px;
+}
+
+.contacts ul li i {
+    font-size: 0.8rem;
+    margin-right: 5px;
+    color: var(--the_orange_color)
+}
+
+.contacts ul li span {
+    font-size: 0.8rem;
+}
+
+
+.separate {
+    height: auto;
+    padding: 0 2%;
+    background-color: #001E3D;
+}
+
+.designers {
+    padding: 20px 2%;
+    background-color: #001E3D;
+    color: whitesmoke;
+    font-size: 0.8rem;
+}
+
+.designers a {
+    text-decoration: none;
+    color: var(--the_orange_color);
+    
+}
 
 @media only screen and (max-width: 512px) {
 
@@ -120,6 +197,7 @@
     .menu ul {
         list-style-type : none;
         padding-top : 20px;
+        padding-left: 20px;
     }
     
     .menu ul li {
@@ -128,8 +206,8 @@
     
     .menu ul li a {
         text-decoration :  none;
-        font-size : 1.5rem;
-        font-weight : 900;
+        font-size : 1.2rem;
+        font-weight : 700;
         color: white;
     }
     
@@ -166,8 +244,8 @@
     
     .topMenu h3 {
         text-align : center; 
-        
-        }
+        color:  var(--the_blue_color)
+    }
 
 
     /*small navigation code*/
@@ -241,6 +319,20 @@
     }
 
 
+    .topFooter {
+        grid-template-columns: 1fr;
+    }
+
+
+    .biography , .quick_links , .follow_us{
+        margin-bottom: 20px;
+    }
+
+    .about_image img {
+        height: 35vh;
+    }
+
+    /*footer*/
     .topFooter {
         grid-template-columns: 1fr;
     }

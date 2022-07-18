@@ -31,49 +31,63 @@ body {
     padding: 2px 4px;
 }
 
-.contactDetails {
-    height: 550px;
-    display: grid;
-    grid-template-columns: 75% 25%;
-}
-
-.contactMap {
-    height: 100%;
-}
-
 .contactMap iframe {
     height: 100%;
     width: 100%;
 }
 
-.contacts {
-    padding: 20px;
-    height: 100%;
-    color: #186BBE; 
+.contactInformation {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 50px 10%;
 }
 
-.contacts h3 {
-    margin-bottom: 20px;
-    font-weight: 900;
+
+.infoSection {
+    text-align: center;
+}
+
+.infoSection i , .infoSection h3 , .infoSection p {
+    margin-bottom: 10px;
+}
+
+.infoSection i , .infoSection span {
+    color: var(--the_blue_color);
+}
+
+.infoSection a {
+    color: var(--the_blue_color);
+}
+
+.infoSection i {
     font-size: 1.5rem;
 }
 
-.contacts hr {
-    background-color: #BC771D;
+.contactMap {
+    height: 60vh;
 }
 
-.contacts ul {
-    margin-top: 20px;
-    list-style-type: none;
-    padding-right: 20px;
+
+@media (max-width: 512px) {
+    .contactInformation {
+        grid-template-columns: 1fr;
+        padding: 20px 2%;
+    }
+
+    .infoSection {
+        margin-bottom: 20px;
+    }
+    
+    .infoSection i {
+        font-size: 1.2rem;
+    }
+    
+    .contactMap {
+        height: 50vh;
+    }
 }
 
-.contacts ul li {
-    font-size: 1rem;
-    margin-bottom: 19px;
-}
 
-.contacts ul li span {
-    margin-left: 10px;
-}
+
+
 
