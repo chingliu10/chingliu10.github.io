@@ -1,0 +1,79 @@
+:root {
+    --the_blue_color : #186BBE;
+    --the_orange_color : #BC771D;
+    --the_gray_color : gray;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navigation {
+    background-color: var(--the_blue_color);
+    padding: 20px 100px;
+}
+
+.companyLogo {
+    left : 100px;
+    top: 20px;
+}
+
+
+.active {
+    color: #BC771D !important;
+    font-weight: 700;
+    background-color: white;
+    padding: 2px 4px;
+}
+
+.contactDetails {
+    height: 550px;
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+
+.contactMap {
+    height: 100%;
+}
+
+.contactMap iframe {
+    height: 100%;
+    width: 100%;
+}
+
+.contacts {
+    padding: 20px;
+    height: 100%;
+    color: #186BBE; 
+}
+
+.contacts h3 {
+    margin-bottom: 20px;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.contacts hr {
+    background-color: #BC771D;
+}
+
+.contacts ul {
+    margin-top: 20px;
+    list-style-type: none;
+    padding-right: 20px;
+}
+
+.contacts ul li {
+    font-size: 1rem;
+    margin-bottom: 19px;
+}
+
+.contacts ul li span {
+    margin-left: 10px;
+}
+

@@ -1,0 +1,167 @@
+:root {
+    --the_blue_color : #186BBE;
+    --the_orange_color : #BC771D;
+    --the_gray_color : gray;
+}
+
+
+.navigation {
+    position : relative;
+    z-index: 100;
+}
+
+.companyLogo{
+    z-index: 120;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.banner {
+    position: relative;
+    height: 350px;
+    background-image: url("/joe-holland-80zZ1s24Nag-unsplash.jpg");
+    background-size: cover;
+    background-position: top ;
+    z-index : 100;
+}
+
+.bannerEffect {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+}
+
+.bannerContent {
+    z-index: 300;
+    display: grid;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.bannerContent div {
+    padding: 0% 7%;
+}
+.bannerContent h1 {
+    color: white;
+}
+
+.bannerContent div p {
+    color: white;
+}
+
+.bannerContent div p a {
+    text-decoration: none;
+    color:  white;
+}
+
+.bannerContent div p a:nth-child(1):hover {
+    color: #BC771D;
+}
+
+.bannerContent div p a:nth-child(2) {
+    color: #BC771D;
+    font-weight: 900;
+}
+
+.banner hr {
+    width: 70px;
+    height: 5px;
+    margin: 0;
+    background-color: #BC771D;
+    border: none;
+    margin: 10px 0;
+}
+
+#main {
+    position: relative;
+    z-index: 20;
+    background: #fff;
+    transition: transform 0.6s ease;
+}
+@media (min-width: 640px) {
+    #main {
+        padding: 1em;
+   }
+}
+.fake-section {
+    background: #eee;
+    height: 300px;
+}
+.tiles-a {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.tiles-a ul {
+    margin: 0;
+    padding: 0;
+}
+.tiles-a li {
+    list-style: none;
+}
+@media (min-width: 640px) {
+    .tiles-a li {
+        float: left;
+        width: 33.33%;
+   }
+}
+.tiles-a a {
+    margin: 1em;
+    display: block;
+    background: #222;
+    padding-top: 73%;
+    height: 0;
+}
+#aside {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    background: #eee;
+    overflow-y: scroll;
+    z-index: 10;
+}
+#aside img {
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+#aside .wrapper {
+    padding: 1em;
+}
+#aside .close {
+    width: 25px;
+    display: block;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 50%;
+}
+.show-detail {
+    overflow: hidden;
+}
+.show-detail #main {
+    transform: translateX(-60%);
+}
+.visually-hidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+

@@ -1,0 +1,32 @@
+.navigation {
+    background-color: var(--the_blue_color);
+    padding: 20px 100px;
+}
+
+.companyLogo {
+    position: absolute;
+    left : 100px;
+    top: 20px;
+    color: white;
+    font-weight: 700;
+}
+
+
+.active {
+    color: #BC771D !important;
+    font-weight: 700;
+    background-color: white;
+    padding: 2px 4px;
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    margin-left: 20px;
+    color: white;
+}
