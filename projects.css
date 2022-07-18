@@ -35,7 +35,7 @@ body {
 .bannerEffect {
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: var(--the_blue_color);
     z-index: 100;
 }
 
@@ -81,87 +81,64 @@ body {
     margin: 10px 0;
 }
 
-#main {
-    position: relative;
-    z-index: 20;
-    background: #fff;
-    transition: transform 0.6s ease;
+
+.projectHeader h2 {
+    padding: 20px 8%;
+    color: var(--the_orange_color);
 }
-@media (min-width: 640px) {
-    #main {
-        padding: 1em;
-   }
-}
-.fake-section {
-    background: #eee;
-    height: 300px;
-}
-.tiles-a {
+
+/*drops here*/
+
+.container {
+    display: flex;
     width: 100%;
-    position: relative;
+    padding: 4% 2%;
+    box-sizing: border-box;
+    height: 100vh;
+  }
+  
+  .box {
+    flex: 1;
     overflow: hidden;
-}
-.tiles-a ul {
-    margin: 0;
-    padding: 0;
-}
-.tiles-a li {
-    list-style: none;
-}
-@media (min-width: 640px) {
-    .tiles-a li {
-        float: left;
-        width: 33.33%;
-   }
-}
-.tiles-a a {
-    margin: 1em;
+    transition: .5s;
+    margin: 0 2%;
+    box-shadow: 0 20px 30px rgba(0,0,0,.1);
+    line-height: 0;
+  }
+  
+  .box > img {
+    width: 200%;
+    height: calc(100% - 10vh);
+    object-fit: cover; 
+    transition: .5s;
+  }
+  
+  .box > span {
+    font-size: 3.8vh;
     display: block;
-    background: #222;
-    padding-top: 73%;
-    height: 0;
-}
-#aside {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 60%;
+    text-align: center;
+    height: 10vh;
+    line-height: 2.6;
+  }
+  
+  .box:hover { flex: 1 1 80%; }
+  .box:hover > img {
+    width: 100%;
     height: 100%;
-    background: #eee;
-    overflow-y: scroll;
-    z-index: 10;
-}
-#aside img {
-    width: 100%;
-    height: auto;
-    vertical-align: top;
-}
-#aside .wrapper {
-    padding: 1em;
-}
-#aside .close {
-    width: 25px;
-    display: block;
-    position: absolute;
-    top: 1em;
-    right: 1em;
-    background-color: rgba(0, 0, 0, .5);
-    border-radius: 50%;
-}
-.show-detail {
-    overflow: hidden;
-}
-.show-detail #main {
-    transform: translateX(-60%);
-}
-.visually-hidden {
-    position: absolute;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    width: 1px;
-    margin: -1px;
-    padding: 0;
-    border: 0;
-}
+  }
+
+
+  @media only screen and (max-width: 512px) {
+
+
+    .container {
+        height: 60vh;
+    }
+
+    .box:hover { 
+        flex: 1 1 70%; 
+    } 
+
+  }
+   
 

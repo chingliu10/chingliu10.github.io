@@ -3,6 +3,10 @@
     padding: 20px 100px;
 }
 
+.smallNavigation {
+    display: none;
+}
+
 .companyLogo {
     position: absolute;
     left : 100px;
@@ -10,6 +14,7 @@
     color: white;
     font-weight: 700;
 }
+
 
 
 .active {
@@ -29,4 +34,228 @@
     text-decoration: none;
     margin-left: 20px;
     color: white;
+}
+
+/*end of small navigation*/
+
+@media only screen and (max-width: 512px) {
+
+    .navigation {
+        display: none;
+    }
+
+
+    .smallNavigation {
+        display: block;
+    }
+
+    .companyLogo {
+        left: 8%;
+        color: white;
+        font-size: 1.2rem;
+    }
+
+    /*small navigation code*/
+    .burger {
+        position : fixed;
+        bottom : 20px;
+        left : 50%;
+        background-color : white;
+        height : 25px;
+        width : 25px;
+        transform : translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding : 10px;
+        border-radius : 100%;
+        z-index : 10000;
+        background-color : var(--the_blue_color);
+        border: none;
+        transition : left .2s;
+    }
+    
+    .burgerMoveRight {
+        left: calc(100% - 50px);
+    }
+    
+    .line { 
+        height : 4px;
+        background-color : white;
+        width : 100%;
+        transition : transform .3s;
+    }
+    
+    .lineOne {
+        background-color : white;
+        transform: translate(0,200%) rotate(45deg);
+    }
+    
+    .lineTwo {
+        visibility : hidden;
+        }
+    
+    .lineThree {
+        background-color : white;
+        transform: translate(0,-200%) rotate( 135deg);
+    }
+    
+    
+    .menu {
+        position : fixed ;
+        bottom : 0;
+        left : 100%;
+        height : 50%;
+        width : 100%;
+        z-index : 100;
+        background-color : var(--the_blue_color);
+        transition : left .2s;
+    }
+    
+    .menuShiftLeft{
+        left : 0;
+    }
+    
+    .menu ul {
+        list-style-type : none;
+        padding-top : 20px;
+    }
+    
+    .menu ul li {
+        margin-bottom : 10px;
+    }
+    
+    .menu ul li a {
+        text-decoration :  none;
+        font-size : 1.5rem;
+        font-weight : 900;
+        color: white;
+    }
+    
+
+     
+    .smallLogo a {
+        display : block;
+        height : 200px;
+        width: 200px;
+        margin: 0px auto;
+    }
+    
+    .smallLogo a img {
+        height : 100%;
+        width: 100%;
+    }
+    
+    .topMenu {
+        display : grid;
+        align-items : center;
+        position : fixed;
+        top : -50%;
+        height : 50%;
+        left: 0;
+        width : 100%;
+        transition : top .5s;
+        background-color: white;
+        z-index: 10000;
+    }
+    
+    .dropTopMenu {
+        top : 0;
+    }
+    
+    .topMenu h3 {
+        text-align : center; 
+        
+        }
+
+
+    /*small navigation code*/
+    .landingPage {
+        height: 60vh;
+        background-image: none;
+        width: 50vw;
+        background-color: #186bbe4d;
+    }
+
+    .landingPageEffect {
+        background-image: none;
+        /*clip-path: polygon(60% 0, 100% 0, 100% 60%, 60% 60%);*/
+        width: 100vw;
+    }
+
+    .companyLogo {
+        color:  white;
+    }
+
+    .build_your_future {
+        top : 40%;
+        padding: 10px;
+    }
+
+
+    .build_your_future h1 {
+        font-size : 1rem;
+        color: var(--the_blue_color)
+    }
+
+    .build_your_future p {
+        color: #333;
+    }
+
+    .company_services {
+        display: none;
+    }
+
+    .about_neb_construction {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .about_image {
+        padding-bottom: 20px;
+    }
+
+    .about_information {
+        padding-left: 0;
+    }
+
+    .about_information article {
+        line-height: 1.4rem;
+        text-align:justify;
+    }
+
+    .whiteBoard, .specializationImageCover {
+        display: none;
+    }
+
+
+    .projectLayout img {
+        height: 40vh;
+    }
+    
+    .project_image_information {
+        width: 75vw;
+        height: auto;
+        padding: 5px 20px;
+    }
+
+
+    .topFooter {
+        grid-template-columns: 1fr;
+    }
+
+
+    .biography , .quick_links , .follow_us{
+        margin-bottom: 20px;
+    }
+
+
+
+
+    .about_image img {
+        height: 35vh;
+    }
+
+
 }
